@@ -132,11 +132,11 @@ body {
   background-size: 100% 100%; /* La imagen se ajusta y se alarga para cubrir todo el contenedor */
   background-position: center center; /* Centra la imagen tanto vertical como horizontalmente */
   color: white; /* Asegura que el texto sea legible */
-  padding: 100px 20px; /* Espaciado dentro del footer */
+  padding: 300px 70px 70px; /* Ajusta padding-top para mover el contenido hacia abajo */
   text-align: center; /* Centra el texto */
   display: flex; /* Usa flexbox para centrar el contenido */
   flex-direction: column; /* Asegura que el contenido sea vertical */
-  align-items: auto 100%; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido horizontalmente */
   background-color: #000; /* Opcional: fondo negro para rellenar espacios */
 }
 
