@@ -1,110 +1,278 @@
-
 body {
-    background-color: #202020 ;
-  }
-  
-  /* -----------------seccion de nav ----------------------- */
-  .navbar {
-    background-color: #2c2c2c;
-    font-weight: bold;
-  }
-  
-  
-  /* ------------------seccion de inicio --------------------- */
-
-  .seccion-inicio{
-    padding: 20px;
-  }
-
-
-  /* ------------------seccion de about us------------ */
-
-  .seccion-about-us{
-    padding: 40px 0 40px 0;
-    background-color: #2e1e19;
-    color: rgb(211, 211, 211);
-  }
-
-
-
-  /* ------------------seccion de productos o servicios-------------------- */
-
-  .seccion-productos{
-    padding: 20px;
-    background-color: bisque;
-
-  }
-
-  .seccion-productos .card-title{
-    font-size: 60px;
-    
-    align-items: center;
-    color: rgb(255, 255, 255);
-
-  }
-
-  .seccion-productos img{
-    border-radius: 20px;
-  }
-
-  .seccion-productos .card:hover .overlay{
-    opacity: 1;
-    
-  }
-
-
-
-  /* -----------------seccion de procesos------------------ */
-
-
-  .seccion-procesos{
-    padding: 20px;
-  }
-
-  .seccion-procesos .proceso-texto{
-    color: white;
-  }
-
-  /* -----------------seccion de  formulario de cliente ---------------- */
-
-.formulario{
-    padding: 20px;
+  background-color: #202020;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.formulario h1{
+/* -----------------sección de nav ----------------------- */
+.navbar {
+  background-color: #2c2c2c;
+  font-weight: bold;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+  margin: 0 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+/* ------------------sección de inicio --------------------- */
+.seccion-inicio {
+  padding: 40px;
+  text-align: center;
+  background-color: #333;
+}
+
+.seccion-inicio h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.seccion-inicio h3 {
+  font-size: 20px;
+  color: #bbb;
+}
+
+/* ------------------sección de About Us --------------------- */
+.seccion-about-us {
+  padding: 40px;
+  background-color: #2e1e19;
+  color: rgb(211, 211, 211);
+  text-align: center;
+}
+
+.seccion-about-us h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+/* ------------------sección de productos -------------------- */
+.seccion-productos {
+  padding: 40px 20px;
+  background-color: bisque;
+  text-align: center;
+}
+
+.seccion-productos .card {
+  display: inline-block;
+  width: 300px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.seccion-productos img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.seccion-productos .card-body {
+  padding: 15px;
+}
+
+.seccion-productos .card-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* -----------------sección de formulario ------------------- */
+.formulario {
+  padding: 40px;
+  background-color: #444;
+  text-align: center;
+}
+
+.formulario h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.formulario .form-group {
+  margin-bottom: 15px;
+}
+
+.formulario input, .formulario textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.formulario button {
+  background-color: #2c2c2c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+/* -----------------sección de pie de página ---------------- */
+.seccion-footer {
+  background-color: #2c2c2c;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-text {
+  width: 30%;
+  text-align: left;
+}
+
+.footer-text h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-text p {
+  font-size: 16px;
+  color: #bbb;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px; /* Espacio entre los elementos */
+}
+
+.link-item {
+  display: flex;
+  flex-direction: column; /* Ícono arriba del texto */
+  align-items: center; /* Centrar contenido en ambas direcciones */
+  text-decoration: none; /* Quitar el subrayado de los enlaces */
+  color: inherit; /* Heredar el color del texto */
+}
+
+.footer-links a {
+  display: flex;
+  align-items: center;
+  color: #ffcf4b;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 10px 0;
+  justify-content: center;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.link-icon {
+  font-size: 2rem; /* Tamaño del ícono */
+  margin-bottom: 5px; /* Espacio entre el ícono y el texto */
+}
+
+.link-item:hover {
+  color: #007bff; /* Color al pasar el mouse */
+}
+
+.footer-social {
+  width: 30%;
+  text-align: center;
+}
+
+.footer-social a {
+  margin: 0 10px;
+  color: #ffcf4b;
+  font-size: 24px;
+}
+
+.footer-social a:hover {
   color: white;
 }
 
+.footer-divider {
+  margin: 20px 0;
+  border: 0;
+  border-top: 2px solid #ffcf4b; /* Cambiado a un color destacado */
+  width: 80%; /* Reduce el ancho para centrarla */
+  margin-left: auto;
+  margin-right: auto; /* Centra la línea */
+  opacity: 0.8; /* Un poco de transparencia */
+}
 
-  /* ----------------seccion de pie de pagina ---------------- */
 
+.seccion-footer p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #bbb;
+}
 
-
-
-
-
-  
-
-  
-  
-  
-  
-  @media (max-width: 767px){
-  
-    .carrusel-texto h1{
-      font-size: 50px;
-    }
-  
-    .seccion-inicio h3{
-      font-size: 18px;
-    }
-  
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 767px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  @media (max-width: 572px){
-  
-    .carrusel-texto h1{
-      font-size: 35px;
-    }
-  
+
+  .footer-text, .footer-links, .footer-social {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
   }
+}
+
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 767px) {
+  .footer-content {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-text, .footer-links, .footer-social {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+  }
+
+  .footer-social a {
+      margin: 0 5px;
+  }
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+  .navbar a {
+      font-size: 16px;
+  }
+  .seccion-inicio h1 {
+      font-size: 40px;
+  }
+  .seccion-about-us h2 {
+      font-size: 30px;
+  }
+  .formulario h1 {
+      font-size: 28px;
+  }
+  .formulario input, .formulario textarea {
+      font-size: 14px;
+  }
+}
