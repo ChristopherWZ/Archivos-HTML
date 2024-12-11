@@ -1,3 +1,4 @@
+/* General */
 body {
   background-color: #202020;
   color: white;
@@ -126,10 +127,17 @@ body {
 
 /* -----------------sección de pie de página ---------------- */
 .seccion-footer {
-  background-color: #2c2c2c;
-  color: white;
-  padding: 40px 20px;
-  text-align: center;
+  background-image: url('./imagenes/Footer.png'); /* Reemplaza con la ruta de tu imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-size: 100% 100%; /* La imagen se ajusta y se alarga para cubrir todo el contenedor */
+  background-position: center center; /* Centra la imagen tanto vertical como horizontalmente */
+  color: white; /* Asegura que el texto sea legible */
+  padding: 100px 20px; /* Espaciado dentro del footer */
+  text-align: center; /* Centra el texto */
+  display: flex; /* Usa flexbox para centrar el contenido */
+  flex-direction: column; /* Asegura que el contenido sea vertical */
+  align-items: auto 100%; /* Centra el contenido horizontalmente */
+  background-color: #000; /* Opcional: fondo negro para rellenar espacios */
 }
 
 .footer-content {
