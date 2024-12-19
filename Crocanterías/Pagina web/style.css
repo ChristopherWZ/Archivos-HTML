@@ -54,7 +54,9 @@ body {
   }
 
   /* -----------------seccion de  formulario de cliente ---------------- */
-
+form{
+  padding: 50px;
+}
 
 .formulario{
     /* Fondo lizo */
