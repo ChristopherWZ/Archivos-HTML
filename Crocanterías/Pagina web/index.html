@@ -148,126 +148,94 @@
     <!-- formulario de contacto al cliente  -->
 
     <section id="seccion-formulario" class="formulario text-center">
-        <h1>Ordená tu crocante hoy mismo!</h1>
-      
-        <!-- nombre y pago del cliente  -->
+      <h1>¡Ordena tu crocante hoy mismo!</h1>
+    
+      <!-- nombre y pago del cliente -->
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="nombreInput" class="form-label">Nombre del cliente</label>
+          <input type="text" class="form-control" id="nombreInput" placeholder="Escribe tu nombre" required>
+        </div>
+    
+        <div class="col-md-6">
+          <label for="saborInput" class="form-label">Sabores de Crocante</label>
+          <select class="form-select" id="saborInput" required>
+            <option value="" disabled selected>Elige un sabor</option>
+            <option value="1">Tradicional</option>
+            <option value="2">Pistacho</option>
+            <option value="3">Chocolate Hersheys</option>
+            <option value="4">Higos</option>
+            <option value="5">Coco Rosa</option>
+            <option value="6">Chiverre</option>
+            <option value="7">Bavarian</option>
+            <option value="8">Navideño (Temporal)</option>
+          </select>
+        </div>
+    
+        <div class="col-md-6">
+          <label for="cantidadInput" class="form-label">Cantidad de producto</label>
+          <input type="number" class="form-control" id="cantidadInput" placeholder="Ej: 1, 2, 3..." min="1" required>
+        </div>
+    
+        <div class="col-md-6">
+          <label for="envioInput" class="form-label">Método de Envío</label>
+          <select class="form-select" id="envioInput" required>
+            <option value="" disabled selected>Elige un método</option>
+            <option value="1">Uber Flash</option>
+            <option value="2">Correos de Costa Rica</option>
+            <option value="3">Personal "GAM"</option>
+          </select>
+        </div>
         <form class="row g-3">
           <div class="col-md-6">
-            <label for="inputEmail4" class="form-label">Nombre de quién hace la reserva </label>
-            <input type="text" class="form-control" id="nombreInput">
+            <label for="nombreInput" class="form-label">Numero de telefono</label>
+            <input type="text" class="form-control" id="nombreInput" placeholder="Digite numero" required>
           </div>
-          <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">Cantidad de personasa que vienen</label>
-            <input type="number" class="form-control" id="cantidadInput">
-          </div>
-          <div class="col-12">
-            <label for="inputPassword4" class="form-label">Metodo de pago</label>
-            <div class="input-group mb-3">
-              <label class="input-group-text" for="inputGroupSelect01">Metodo de Pago</label>
-              <select class="form-select" id="inputGroupSelect01">
-                <option selected>Elige</option>
-                <option value="1">Paypal</option>
-                <option value="2">SINPE</option>
-                <option value="3">Tarjeta</option>
-                <option value="3">Efectivo</option>
-              </select>
-            </div>
-          </div>
-          <br><br>
-      
-          <!-- direccion del cliente  -->
-          <label class="titulo-direccion">Direccion 1</label>
-      
-      
-          <div class="col-md-6">
-            <label for="inputState" class="form-label">Provincia</label>
-            <select id="inputState" class="form-select">
-              <option selected>Provincia</option>
-              <option>San Jose</option>
-              <option>Alajuela</option>
-              <option>Cartago</option>
-              <option>heredia</option>
-              <option>Guanacaste</option>
-              <option>Puntarenas</option>
-              <option>limón</option>
-            </select>
-          </div>
-      
-          <!-- tomar en consideracion que las opciones deben cambiar con la provincia elegida  -->
-          <div class="col-md-4">
-            <label for="inputState" class="form-label">Canton</label>
-            <select id="inputState" class="form-select">
-              <option selected>Cantón</option>
-              <option>Coronado</option>
-              <option>Sabanilla</option>
-              <option>San Rafael</option>
-      
-      
-            </select>
-          </div>
-          <div class="col-md-2">
-            <label for="inputZip" class="form-label">Zip</label>
-            <input type="text" class="form-control" id="inputZip">
-          </div>
-      
-          <div class="col-12">
-            <label for="inputAddress2" class="form-label">Direccion 2</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Barrio, Numero de casa/apartamento, Numero de piso">
-          </div>
-      
-          <div class="col-md-6">
-            <label for="inputCity" class="form-label">Celular</label>
-            <input type="text" class="form-control" id="inputcelular">
-          </div>
-          <div class="col-md-6">
-            <label for="inputCity" class="form-label">Telefono Fijo</label>
-            <input type="text" class="form-control" id="inputtelefono">
-          </div>
-      
-          <div class="col-md-6 col-sm-12">
-            <div class="contenedor-atracciones">
-              <h1>Elije tus atracciones</h1>
-            <div class="form-check form-switch input1">
-              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-              <label class="form-check-label" for="flexSwitchCheckDefault">Spa</label>
-            </div>
-            <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-              <label class="form-check-label" for="flexSwitchCheckDefault">Banana Boat</label>
-            </div>
-            <div class="form-check form-switch input1">
-              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-              <label class="form-check-label" for="flexSwitchCheckDefault">paracaidismo Acuatico</label>
-            </div>
-            </div>
-          </div>
-      
-          <div class="col-md-6 col-sm-12">
-            <div class="contenedor-toures">
-              <h1>Elije tu Tour</h1>
-            <div class="form-check form-switch input1">
-              <input class="form-check-input " type="checkbox" role="switch" id="flexSwitchCheckDefault">
-              <label class="form-check-label" for="flexSwitchCheckDefault">5 Días</label>
-            </div>
-      
-            <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-              <label class="form-check-label" for="flexSwitchCheckDefault">12 Días </label>
-            </div>
-      
-            <div class="form-check form-switch input1">
-              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-              <label class="form-check-label" for="flexSwitchCheckDefault">16 Días </label>
-            </div>
-            </div>
-          </div>
-      
-      
-          <div class="col-12">
-            <button type="submit" class="btn btn-primary">Reserva</button>
-          </div>
-        </form>
-      </section>
+    
+        <div class="col-md-6">
+          <label for="pagoInput" class="form-label">Métodos de pago</label>
+          <select class="form-select" id="pagoInput" required>
+            <option value="" disabled selected>Elige un método de pago</option>
+            <option value="1">SINPE</option>
+            <option value="2">Efectivo</option>
+          </select>
+        </div>
+        
+    
+        <hr>
+    
+        <!-- Dirección del cliente a entregar -->
+        
+    
+        <div class="col-md-6">
+          <label for="provinciaInput" class="form-label">Provincia</label>
+          <select id="provinciaInput" class="form-select" required>
+            <option value="" disabled selected>Selecciona Provincia</option>
+            <option value="San Jose">San José</option>
+            <option value="Alajuela">Alajuela</option>
+            <option value="Cartago">Cartago</option>
+            <option value="Heredia">Heredia</option>
+            <option value="Guanacaste">Guanacaste</option>
+            <option value="Puntarenas">Puntarenas</option>
+            <option value="Limón">Limón</option>
+          </select>
+        </div>
+    
+        <div class="col-md-6">
+          <label for="direccionInput" class="form-label">Dirección completa</label>
+          <input type="text" class="form-control" id="direccionInput" placeholder="Ej: Cantón, distrito, barrio" required>
+        </div>
+    
+        <br><br>
+    
+        <!-- Botón para envío del pedido -->
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Enviar Pedido</button>
+        </div>
+      </form>
+    </section>
+
+
 
 
 
