@@ -55,13 +55,94 @@ body {
 
   /* -----------------seccion de  formulario de cliente ---------------- */
 
+
 .formulario{
+    /* Fondo lizo */
+body {
+  background-size: cover;
+  background-position: center;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Sección del formulario */
+.seccion-formulario {
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad para contraste */
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos del título */
+h1 {
+  color: rgb(55, 0, 255); /* Un color marrón oscuro para resaltar */
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+/* Estilos de los campos de formulario */
+form label {
+  font-weight: bold;
+  color: #ffcf4b;
+}
+
+form input, form select, form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #3e2723;
+}
+
+form input:focus, form select:focus {
+  outline: none;
+  border-color: #795548; /* Un color más oscuro para los bordes al hacer foco */
+}
+
+form .btn-primary {
+  background-color: #795548; /* Un marrón cálido */
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+form .btn-primary:hover {
+  background-color: #6d4c41; /* Un tono más oscuro de marrón */
+}
+
+/* Estilo para los campos select */
+.form-select {
+  background-color: #fff;
+  color: #3e2723;
+  border-radius: 5px;
+}
+
+/* Asegurarse de que los botones y campos sean responsivos */
+@media (max-width: 768px) {
+  .formulario {
     padding: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
 }
 
 .formulario h1{
   color: white;
 }
+
+
+
 
 
   /* ----------------seccion de pie de pagina ---------------- */
